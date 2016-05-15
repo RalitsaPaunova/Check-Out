@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Check_Out.Models
@@ -80,10 +79,6 @@ namespace Check_Out.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-
-        [DataType(DataType.Date)]
-        [Display(Name = "Birth Date")]
-        public DateTime BirthDate { get; set; }
     }
 
     public class ResetPasswordViewModel
